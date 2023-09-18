@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Online-Shop</title>
+</head>
+<body>
+    <header>
+        <h1>Hi, this is my online shop!</h1>
+    </header>
+    <section id="cards">
+        <div class="card" style="width: 18rem;">
+            <img src="img/keagan-henman-Won79_9oUEk-unsplash.jpg" class="card-img-top" alt="T-shirts">
+            <div class="card-body">
+              <h5 class="card-title">T-Shirts</h5>
+              <p class="card-text">A nice cotton t-Shirt</p>
+              <p class="card-text">25 euro</p>
+              <button id="tshirts-btn" type="button" class="btn btn-primary">Add to cart</button>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="img/nick-page-XMg8GBzNmgA-unsplash.jpg" class="card-img-top" alt="Socks">
+            <div class="card-body">
+              <h5 class="card-title">Socks</h5>
+              <p class="card-text">Socks for every day</p>
+              <p class="card-text">5 euro</p>
+              <button id="socks-btn" type="button" class="btn btn-primary">Add to cart</button>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="img/engin-akyurt-Hd4nlxLgIbA-unsplash.jpg" class="card-img-top" alt="Shorts">
+            <div class="card-body">
+              <h5 class="card-title">Shorts</h5>
+              <p class="card-text">A pair of demin shorts</p>
+              <p class="card-text">50 euro</p>
+              <button id="shorts-btn" type="button" class="btn btn-primary">Add to cart</button>
+            </div>
+          </div>
+    </section>
+    <section>
+        <h3>This is on your shopping bsket:</h3>
+        <ul>
+            <li id="li-tshirts"></li>
+            <li id="li-socks"></li>
+            <li id="li-shorts"></li>
+        </ul>
+        <button id="checkout-btn" type="button" class="btn btn-primary">Go to check out</button>
+    </section>
+    <section>
+        <h3>Amount to pay:</h3>
+        <p>Please pay <span>0</span> Euro</p>
+    </section>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
