@@ -17,8 +17,8 @@
             <div class="card-body">
               <h5 class="card-title">T-Shirts</h5>
               <p class="card-text">A nice cotton t-Shirt</p>
-              <p class="card-text">25 euro</p>
-              <button id="tshirts-btn" type="button" class="btn btn-primary">Add to cart</button>
+              <p class="card-text price">€25</p>
+              <button type="button" class="btn btn-primary shop-item-button">Add to cart</button>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
@@ -26,8 +26,8 @@
             <div class="card-body">
               <h5 class="card-title">Socks</h5>
               <p class="card-text">Socks for every day</p>
-              <p class="card-text">5 euro</p>
-              <button id="socks-btn" type="button" class="btn btn-primary">Add to cart</button>
+              <p class="card-text price">€5</p>
+              <button type="button" class="btn btn-primary shop-item-button">Add to cart</button>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
@@ -35,23 +35,19 @@
             <div class="card-body">
               <h5 class="card-title">Shorts</h5>
               <p class="card-text">A pair of demin shorts</p>
-              <p class="card-text">50 euro</p>
-              <button id="shorts-btn" type="button" class="btn btn-primary">Add to cart</button>
+              <p class="card-text price">€50</p>
+              <button type="button" class="btn btn-primary shop-item-button">Add to cart</button>
             </div>
           </div>
     </section>
     <section>
-        <h3>This is on your shopping bsket:</h3>
-        <ul>
-            <li id="li-tshirts"></li>
-            <li id="li-socks"></li>
-            <li id="li-shorts"></li>
-        </ul>
-        <button id="checkout-btn" type="button" class="btn btn-primary">Go to check out</button>
+      <h3>This is on your shopping basket:</h3>
+      <div class="cart-items"></div>
+      <button id="checkout-btn" type="button" class="btn btn-primary">Go to check out</button>
     </section>
     <section>
         <h3>Amount to pay:</h3>
-        <p>Please pay <span>0</span> Euro</p>
+        <p class="cart-total">Please pay €<span class="cart-total-price">0</span></p>
     </section>
 
 
