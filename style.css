@@ -1,9 +1,148 @@
-#cards {
-    display: flex;
-    justify-content:space-around;
+/**
+* ! fdhfjdhkfjdhskfdj
+* ? fefysdfyslf
+**/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-ul {
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.shop {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.item {
+    border: 1px solid black;
+    margin-top: 2rem;
+    height: 320px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 30px;
+}
+
+.price-quantity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 8px;
+    
+}
+
+#checkout-btn {
+    font-size: 16px;
+    background-color: rgb(0, 183, 255);
+    color: white;   
+    padding: 0 15px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin: 15px 55px;
+}
+
+.cart {
+    position: relative;
+    color: white;
+    font-size: 25px;
+    padding: 0 5px;
+    border-radius: 4px;
+    background-color: rgb(0, 183, 255);
+}
+  
+.cart-amount {
+    position: absolute;
+    top: -35px;
+    right: -25px;
+    font-size: 14px;
+    background-color: #3e3a3a;
+    color: white;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+.bi-x-lg {
+    color: red;
+    font-weight: bold;
+}
+
+.shopping-cart {
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    margin: 15px 55px;
+    gap: 10px;
     display: none;
-    list-style: none;
+}
+
+#label-cart {
+    margin: 50px 55px 30px 55px;
+}
+
+#label {
+    margin: 0 55px;
+    display: none;
+}
+
+.cart-item {
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+.title-price-x {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-price {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart-item-price {
+    background-color: #3e3a3a;
+    color: white;
+    font-weight: lighter;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+.amount-to-pay {
+    margin: 30px 55px;
+}
+
+.pay {
+    margin: 15px 0;
+}
+
+@media (max-width: 1000px) {
+    .shop {
+        grid-template-columns: repeat(2, 250px);
+    }
+}
+
+@media (max-width: 530px) {
+    .shop {
+        grid-template-columns: repeat(1, 250px);
+    }
 }
