@@ -11,43 +11,18 @@
     <header>
         <h1>Hi, this is my online shop!</h1>
     </header>
-    <section id="cards">
-        <div class="card" style="width: 18rem;">
-            <img src="img/keagan-henman-Won79_9oUEk-unsplash.jpg" class="card-img-top" alt="T-shirts">
-            <div class="card-body">
-              <h5 class="card-title">T-Shirts</h5>
-              <p class="card-text">A nice cotton t-Shirt</p>
-              <p class="card-text price">€25</p>
-              <button type="button" class="btn btn-primary shop-item-button">Add to cart</button>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="img/nick-page-XMg8GBzNmgA-unsplash.jpg" class="card-img-top" alt="Socks">
-            <div class="card-body">
-              <h5 class="card-title">Socks</h5>
-              <p class="card-text">Socks for every day</p>
-              <p class="card-text price">€5</p>
-              <button type="button" class="btn btn-primary shop-item-button">Add to cart</button>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="img/engin-akyurt-Hd4nlxLgIbA-unsplash.jpg" class="card-img-top" alt="Shorts">
-            <div class="card-body">
-              <h5 class="card-title">Shorts</h5>
-              <p class="card-text">A pair of demin shorts</p>
-              <p class="card-text price">€50</p>
-              <button type="button" class="btn btn-primary shop-item-button">Add to cart</button>
-            </div>
-          </div>
-    </section>
+
+    <section id="cards"></section>
+
     <section>
       <h3>This is on your shopping basket:</h3>
-      <div class="cart-items"></div>
+      <ul id="shopping-cart"></ul>
       <button id="checkout-btn" type="button" class="btn btn-primary">Go to check out</button>
     </section>
+
     <section>
         <h3>Amount to pay:</h3>
-        <p class="cart-total">Please pay €<span class="cart-total-price">0</span></p>
+        <p class="cart-total">Please pay €<span id="cart-total-price">0</span></p>
     </section>
 
 
