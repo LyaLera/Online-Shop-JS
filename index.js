@@ -1,5 +1,7 @@
 "use strict";
 
+import { addItemToCart } from "./modules/cart-functions.js"
+
 let shopItemsData = [
     {
   name: "T-Shirts",
@@ -22,9 +24,6 @@ let shopItemsData = [
 }
 ];
 
-// JSON.parse(localStorage.getItem("data")) || 
-let shoppingCartArray = [];
-
 shopItemsData.forEach((item) => {
     let itemDiv = document.createElement("div");
     itemDiv.innerHTML = `
@@ -40,40 +39,29 @@ shopItemsData.forEach((item) => {
     document.getElementById("cards").appendChild(itemDiv);
 });
 
-
-function addItem(item) {
-    shoppingCartArray.push(item); 
-};
-
-function addItemToCart(event) {
-    let choosenItem = shopItemsData.find((item) => {
-        return item.name == event.target.id;
-    })
-    addItem(choosenItem);
-    countTotalPrice();
-    let liItem = document.createElement("li");
-    liItem.innerHTML = choosenItem.name;
-    document.getElementById("shopping-cart").append(liItem);    
-    //localStorage.setItem("data", JSON.stringify(shoppingCartArray));
-};
-
-function countTotalPrice() {
-    let total = 0;
-    for(let i = 0; i < shoppingCartArray.length; i++) {
-        total += shoppingCartArray[i].price;
-    }
-    document.getElementById("cart-total-price").innerHTML = total;
-};
-
 const addToCartButtons = document.querySelectorAll(".shop-item-button");
+const checkoutButton = document.getElementById("checkout-btn");
+
+
 addToCartButtons.forEach((button) => {
-    button.addEventListener("click", (event) => addItemToCart(event));
+    button.addEventListener("click", (event) => {
+    addItemToCart(event)
+    console.log("Something")});
 });
 
-const checkoutButton = document.getElementById("checkout-btn");
 checkoutButton.addEventListener("click", () => {
     document.getElementById("shopping-cart").style.display = "block";
 });
+
+export { shopItemsData }
+
+
+
+
+
+
+
+
 
 
 
